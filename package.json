@@ -31,7 +31,8 @@
     "typescript": "5.1.6"
   },
   "scripts": {
-    "start": "mesh start",
+    "start": "bun src/main.js",
+    "dev": "bun --watch src/main.js",
     "build": "mesh build",
     "format": "prettier --write ./src/**/*.{js,ts}",
     "lint": "eslint --no-error-on-unmatched-pattern \"./src/**/*.{js,ts}\"",
