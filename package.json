@@ -1,0 +1,32 @@
+{
+  "name": "vitetest",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "mesh start",
+    "build": "mesh build",
+    "format": "prettier --write ./src/**/*.js",
+    "lint": "eslint --no-error-on-unmatched-pattern \"./src/**/*.js\"",
+    "lint:fix": "eslint --no-error-on-unmatched-pattern --fix \"./src/**/*.js\"",
+    "prebuild": "bun run lint:fix",
+    "prelint": "bun run format"
+  },
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.88.1",
+    "@graphql-mesh/graphql": "^0.96.0",
+    "@graphql-mesh/openapi": "^0.97.0",
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "eslint": "8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "fastify": "^4.24.3",
+    "graphql": "^16.8.1",
+    "graphql-yoga": "^5.0.0",
+    "prettier": "2.8.8",
+    "tslib": "2.6.2",
+    "typescript": "5.1.6",
+    "vite": "4.4.9"
+  }
+}
