@@ -14,7 +14,7 @@
       ":assets/*": ["./:assets/*"],
       ":constants": ["./src/lib/:constants.js"],
       ":types": ["./src/lib/:types.js"],
-      ":main": ["./src/:main.js"]
+      ":mesh": ["./.mesh/index.ts"]
     },
     "importsNotUsedAsValues": "remove",
     "isolatedModules": true,
