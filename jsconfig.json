@@ -12,13 +12,12 @@
     "paths": {
       ":scripts/*": ["./src/lib/:scripts/*"],
       ":assets/*": ["./:assets/*"],
-      ":constants": ["./src/lib/:constants.ts"],
+      ":constants": ["./src/lib/:constants.js"],
       ":types": ["./src/lib/:types.js"],
       ":main": ["./src/:main.js"]
     },
     "importsNotUsedAsValues": "remove",
     "isolatedModules": true,
-    "preserveValueImports": true,
     "lib": ["esnext", "DOM", "DOM.Iterable"],
     "moduleResolution": "node",
     "module": "esnext",
