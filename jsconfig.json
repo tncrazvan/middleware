@@ -11,24 +11,23 @@
     "types": ["bun-types"],
     "paths": {
       ":scripts/*": ["./src/lib/:scripts/*"],
-      ":assets/*": ["./:assets/*"],
-      ":constants": ["./src/lib/:constants.js"],
-      ":types": ["./src/lib/:types.js"],
-      ":mesh": ["./.mesh/index.ts"]
+      ":constants": ["./src/lib/:constants.ts"],
+      ":types": ["./src/lib/:types.js"]
     },
     "importsNotUsedAsValues": "remove",
     "isolatedModules": true,
+    "preserveValueImports": true,
     "lib": ["esnext", "DOM", "DOM.Iterable"],
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
+    "moduleResolution": "node",
+    "module": "esnext",
     "target": "esnext",
     "ignoreDeprecations": "5.0"
   },
   "include": [
-    "./vite.config.js",
     "./.eslintrc.cjs",
     "./src/**/*.js",
-    "./tests/**/*.js"
+    "./tests/**/*.js",
+    "./src/main.js"
   ],
   "exclude": ["./node_modules/**"]
 }
