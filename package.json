@@ -33,6 +33,7 @@
   "scripts": {
     "start": "bun src/main.js",
     "dev": "bun --watch src/main.js",
+    "console": "mesh serve-source Test",
     "build": "mesh build",
     "format": "prettier --write ./src/**/*.{js,ts}",
     "lint": "eslint --no-error-on-unmatched-pattern \"./src/**/*.{js,ts}\"",
