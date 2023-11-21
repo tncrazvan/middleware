@@ -19,8 +19,8 @@
     "importsNotUsedAsValues": "remove",
     "isolatedModules": true,
     "lib": ["esnext", "DOM", "DOM.Iterable"],
-    "moduleResolution": "node",
-    "module": "esnext",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
     "target": "esnext",
     "ignoreDeprecations": "5.0"
   },
